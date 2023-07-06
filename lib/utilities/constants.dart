@@ -38,7 +38,7 @@ var kSuccessAlertStyle = AlertStyle(
   isCloseButton: false,
   isOverlayTapDismiss: false,
   animationDuration: Duration(milliseconds: 500),
-  backgroundColor: Color(0xFF2C1E68),
+  backgroundColor: Color.fromARGB(255, 0, 118, 164),
   alertBorder: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(10.0),
   ),

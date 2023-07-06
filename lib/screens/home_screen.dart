@@ -52,39 +52,67 @@ class _HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Container(
-//                    width: 155,
-                    height: 64,
-                    child: ElevatedButton(
-                      child: Text("Start"),
-                      onPressed:() {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => GameScreen(
-                              hangmanObject: widget.hangmanWords,
+                    width: 328,
+                    decoration: BoxDecoration(
+                        color: Color(0xff8990C8),
+                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 20),
+                        child: TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => GameScreen(
+                                  hangmanObject: widget.hangmanWords,
+                                ),
+                              ),
+                            );
+                          },
+                          child: Text(
+                            'Start',
+                            style: TextStyle(
+                              fontFamily: 'Metal',
+                              fontSize: 48,
+                              color: Colors.white,
+                              decoration: TextDecoration.none,
                             ),
                           ),
-                        );
-                        
-                      },
+                        ),
+                      ),
                     ),
                   ),
                   SizedBox(
-                    height: 18.0,
+                    height: 20,
                   ),
                   Container(
-//                    width: 155,
-                    height: 64,
-                   child: ElevatedButton(
-                      child: Text('High Scores'),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => LoadingScreen(),
+                    width: 328,
+                    decoration: BoxDecoration(
+                        color: Color(0xff8990C8),
+                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                    child: Center(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 20),
+                        child: TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => LoadingScreen(),
+                                ));
+                          },
+                          child: Text(
+                            'High Score',
+                            style: TextStyle(
+                              fontFamily: 'Metal',
+                              fontSize: 48,
+                              color: Colors.white,
+                              decoration: TextDecoration.none,
+                            ),
                           ),
-                        );
-                      },
+                        ),
+                      ),
                     ),
                   ),
                 ],

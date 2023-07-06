@@ -8,6 +8,7 @@ void main() {
   return runApp(MyApp());
 }
 
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         tooltipTheme: TooltipThemeData(
           decoration: BoxDecoration(
@@ -30,8 +32,8 @@ class MyApp extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        scaffoldBackgroundColor: Color(0xFF421b9b),
-        textTheme: Theme.of(context).textTheme.apply(fontFamily: 'PatrickHand'),
+        scaffoldBackgroundColor: Color.fromARGB(255, 8, 135, 167),
+        textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Metal'),
       ),
       initialRoute: 'homePage',
       routes: {

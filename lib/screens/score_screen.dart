@@ -155,7 +155,7 @@ class ScoreScreen extends StatelessWidget {
                             'High Scores',
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 45.0,
+                              fontSize: 55.0,
                               fontWeight: FontWeight.w300,
                             ),
                           ),

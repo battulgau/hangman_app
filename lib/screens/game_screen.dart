@@ -22,7 +22,7 @@ class GameScreen extends StatefulWidget {
 
 class _GameScreenState extends State<GameScreen> {
   final database = score_database.openDB();
-  int lives = 5;
+  int lives = 3;
   Alphabet englishAlphabet = Alphabet();
   late String word;
   late String hiddenWord;
@@ -39,7 +39,7 @@ class _GameScreenState extends State<GameScreen> {
     setState(() {
       widget.hangmanObject.resetWords();
       englishAlphabet = Alphabet();
-      lives = 5;
+      lives = 3;
       wordCount = 0;
       finishedGame = false;
       resetGame = false;
@@ -265,7 +265,7 @@ class _GameScreenState extends State<GameScreen> {
                                         highlightColor: Colors.transparent,
                                         splashColor: Colors.transparent,
                                         iconSize: 39,
-                                        icon: Icon(MdiIcons.heart),
+                                        icon: Icon(MdiIcons.water),
                                         onPressed: () {},
                                       ),
                                     ),
